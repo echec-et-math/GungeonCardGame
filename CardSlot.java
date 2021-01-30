@@ -1,7 +1,5 @@
 public class CardSlot {
 
-    boolean owner = true; // true means player 1
-
     Card content = null;
 
     public CardSlot() {}
@@ -10,8 +8,9 @@ public class CardSlot {
         this.content = content;
     }
 
-	public boolean belongsToP1() {
-		return owner;
+	public boolean belongsTo(Player p) {
+
+		return content != null && content.getOwner().getId() == p.getId();
 	}
 
 	public boolean isEmpty() {

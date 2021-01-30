@@ -10,7 +10,18 @@ public class Board {
         }
     }
 
-    public CardSlot[][] getGrid() {
-        return grid;
+    public CardSlot[][] getGrid(boolean hosting) {
+        if (hosting) {
+            return grid;
+        }
+        else {
+            CardSlot[][] seenAsClient = new CardSlot[5][10];
+            for (int i=0; i < 5; i++) {
+                for (int j=0; j < 10; j++) {
+                    seenAsClient[i][j] = grid[5 - i - 1][10 - j - 1];
+                }
+            }
+            return seenAsClient;
+        }
     }
 }

@@ -1,4 +1,6 @@
 public class Card {
+    Player owner;
+
     String name;
     int HP;
     int maxHP;
@@ -6,6 +8,10 @@ public class Card {
     int maxDamage;
     int speed;
     int maxSpeed;
+
+	public Player getOwner() {
+		return owner;
+	}
 
     
 }

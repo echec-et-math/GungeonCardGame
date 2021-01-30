@@ -1,13 +1,21 @@
 public class Game {
-    private Player user;
-    private Player opponent;
+    private Player host;
+    private Player client;
 
-    public Player getUser() {
-        return user;
+    public Player getHost() {
+        return host;
     }
 
-    public Player getOpponent() {
-        return opponent;
+    public Player getClient() {
+        return client;
+    }
+
+    public void setHost(Player p) {
+        host = p;
+    }
+
+    public void setClient(Player p) {
+        client = p;
     }
 
     private Board board = new Board();
