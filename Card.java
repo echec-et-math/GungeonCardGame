@@ -1,17 +1,15 @@
 public class Card {
-    Player owner;
-
-    String name;
-    int HP;
-    int maxHP;
-    int damage;
-    int maxDamage;
-    int speed;
-    int maxSpeed;
+    private Player owner;
+    private final Player initialOwner = null; // TODO : initialize
+    private String name;
 
 	public Player getOwner() {
-		return owner;
-	}
+        return owner;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     
 }

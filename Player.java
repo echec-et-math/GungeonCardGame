@@ -11,6 +11,7 @@ public class Player {
 
     public Player(int id) {
         this.id = id;
+        attributes.cardsLeftInDeck = 20; // TODO : for test purposes obviously
     }
 
     public PlayerAttributes getAttributes() {
@@ -18,7 +19,7 @@ public class Player {
     }
 
     public void drawCard() {
-        attributes.hand.add(new Card());
+        attributes.hand.add(new BulletKin()); // TODO : test purposes
     }
 
     public class PlayerAttributes {

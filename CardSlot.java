@@ -1,10 +1,10 @@
 public class CardSlot {
 
-    Card content = null;
+    Mob content = null;
 
     public CardSlot() {}
 
-    public CardSlot(Card content) {
+    public CardSlot(Mob content) {
         this.content = content;
     }
 
